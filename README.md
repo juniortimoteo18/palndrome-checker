@@ -1,0 +1,2 @@
+# palndrome-checker
+ 
