@@ -68,7 +68,7 @@
 		}
 
 		.containerPrincipal .btn_check {
-			transform: translateX(167px);
+			margin: auto;
 			width: 120px;
 			height: 34px;
 			border: none;
@@ -92,6 +92,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+	<!-- HTML Structure start -->
 	<div class="containerPrincipal">
 		<form action="#">
 			<h1>Palindrome Checker</h1>
@@ -106,6 +107,7 @@
 		</form>
 	</div>
 
+	<!-- Javascript code -->
 	<script type="text/javascript">
 		function getPalindrome() {
 			let str = document.getElementById("palindrome").value;
@@ -113,9 +115,9 @@
 			let newStr = str.replace(/\W|_/g, "").toLowerCase();
 			let reverse = newStr.split("").reverse().join("");
 			if (reverse === newStr) {
-				document.getElementById("result").innerHTML = "True is a Palindrome!";
+				document.getElementById("result").innerHTML = str + "True is a Palindrome!";
 			} else {
-				document.getElementById("result").innerHTML = "False is not a Palindrome!";
+				document.getElementById("result").innerHTML = str + "False is not a Palindrome!";
 			}
 		}
 	</script>
